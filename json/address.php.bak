@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * 
+ * @author Orest Hrycyna <orest.hrycyna@surfdome.com>
+ */
+class Address {
+
+	public $firstName;
+	public $lastName;
+	public $address1;
+	public $address2;
+	public $zipcode;
+	public $city;
+	public $state;
+	public $country;
+	public $countryName;
+	public $companyName;
+	public $phone;
+
+	public function getFields() {
+		return array(
+			'firstname' => $this->firstName,
+			'lastname' => $this->lastName,
+			'address1' => $this->address1,
+			'address2' => $this->address2,
+			'zipcode' => $this->zipcode,
+			'city' => $this->city,
+			'state' => $this->state,
+			'country' => $this->country,
+			'country_name' => $this->countryName,
+			'company_name' => $this->companyName,
+			'phone' => $this->phone
+		);
+	}
+
+}
